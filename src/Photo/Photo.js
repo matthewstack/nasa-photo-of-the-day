@@ -1,10 +1,11 @@
 import React from "react";
-
+import PhotoDetails from "./PhotoDetails";
 const Photo = (props) => {
   const { photo } = props;
   return (
-    <div>
+    <div class="photoContainer">
       <img src={photo.url}></img>;
+      <PhotoDetails photo={photo} />
     </div>
   );
 };
