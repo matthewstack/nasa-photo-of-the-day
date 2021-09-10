@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect } from "react";
 
 import "./App.css";
 import axios from "axios";
@@ -31,6 +31,7 @@ function App() {
       })
       .catch((err) => console.error(err));
   }, []);
+
   return (
     <div className="min-h-screen bg-white">
       <header>
@@ -111,4 +112,3 @@ function App() {
 }
 
 export default App;
-// https://api.nasa.gov/planetary/apod?api_key=ZxgxzvFZ3aUoClwgoRdsXyhKm4JryUy1SpcmesVk
