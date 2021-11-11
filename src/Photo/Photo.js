@@ -8,6 +8,7 @@ const Photo = (props) => {
         <div className="aspect-w-3 aspect-h-2 overflow-hidden sm:aspect-w-5 lg:aspect-none lg:absolute lg:w-1/2 lg:h-full lg:pr-4 xl:pr-16">
           <img
             src={photo.url}
+            alt={photo.title}
             className="h-full w-full object-center object-cover lg:h-full lg:w-full"
           />
         </div>
